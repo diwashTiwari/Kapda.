@@ -33,6 +33,9 @@ mysqli_close($conn);
     <title>Kapda</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script defer type="text/javascript" src="./js/script.js"></script>
+
+    <?php include("./includes/favicon.php") ?>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
