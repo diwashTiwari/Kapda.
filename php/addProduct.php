@@ -14,7 +14,7 @@ if (isset($_POST['add_product_btn'])) {
         $price = $_POST['price'];
         $description = $_POST['description'];
 
-        $query = "INSERT INTO products (product_img,title, price, description) VALUES ('$folder', '$title', '$price', '$description')";
+        $query = "INSERT INTO products (product_img, title, price, description) VALUES ('$folder', '$title', '$price', '" . mysqli_real_escape_string($conn, $description) . "')";
         $query_run = mysqli_query($conn, $query);
 
         if ($query_run) {

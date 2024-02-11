@@ -176,12 +176,12 @@ main {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .product-card {
-  width: 300px;
+  width: 280px;
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

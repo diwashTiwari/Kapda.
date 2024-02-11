@@ -111,7 +111,7 @@ if (!$login) {
                                 <th>Image</th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>Actions</th>
+                                <!-- <th>Actions</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -123,10 +123,10 @@ if (!$login) {
                                             ?></td>
                                     <td><?php echo $reg_row['fname'] . ' ' . $reg_row['lname']; ?></td>
                                     <td><?php echo $reg_row['email']; ?></td>
-                                    <td>
+                                    <!-- <td>
                                         <?php echo '<a href="./php/editUser.php?id=' . $reg_row['id'] . '"> <i class="far fa-edit edit-icon"></i></a>'   ?>
-                                        <!-- <?php echo '<a href="./php/deleteUser.php?id=' . $reg_row['id'] . '"> <i class="far fa-trash-alt delete-icon"></i></a>'   ?> -->
-                                    </td>
+                                        <?php echo '<a href="./php/deleteUser.php?id=' . $reg_row['id'] . '"> <i class="far fa-trash-alt delete-icon"></i></a>'   ?>
+                                    </td> -->
                                 </tr>
                             <?php } ?>
                         </tbody>

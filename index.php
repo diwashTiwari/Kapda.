@@ -78,7 +78,7 @@ mysqli_close($conn);
                         echo '<h2 style="font-size:32px;">' . $username . '</h2>';
                     }
                     ?>
-                    <a href="#main" class="btn">Scroll down
+                    <a href="#main" class="btn" style="margin-top: 10px;">Scroll down
                         <i class="fas fa-arrow-down add-icon"></i>
                     </a>
                 </div>
@@ -106,7 +106,7 @@ mysqli_close($conn);
                                 ?>
                             </figure>
                             <div class="product-title"><?php echo $reg_row['title']; ?></div>
-                            <div class="product-description"><?php echo $reg_row['description']; ?></div>
+                            <div class="product-description"><?php echo strlen($reg_row['description']) > 60 ? substr($reg_row['description'], 0, 60) . "..." : $reg_row['description']; ?></div>
                             <div class="product-price">$ <?php echo $reg_row['price']; ?></div>
                         </div>
                     <?php
