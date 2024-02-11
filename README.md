@@ -25,6 +25,6 @@
 
 ## Tech Stack
 
-HTML, CSS, PHP, MySQL 
+HTML, CSS, JavaScript, PHP, MySQL 
 
 
