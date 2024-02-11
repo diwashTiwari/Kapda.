@@ -23,6 +23,13 @@
   $conn = mysqli_connect($hostname, $username, $password, $db);
 ```
 
+### Create Tables in Database
+
+```bash
+  Table Users => Attributes => user_img, fname, lname, email, password
+  Table Products => Attributes => product_img, title, price, description,
+```
+
 ## Tech Stack
 
 HTML, CSS, JavaScript, PHP, MySQL 
