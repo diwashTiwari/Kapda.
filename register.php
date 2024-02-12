@@ -29,6 +29,14 @@ if ($login) {
 
         <div class="form_box">
             <h2>Register</h2>
+
+            <?php
+            if (isset($_GET['error'])) {
+                $error = $_GET['error'];
+                echo '<div style="padding:8px 12px; margin-top: 20px; border-radius: 4px; background-color: #fef2f0; color: black; border: 1px solid #f2494e"> <i class="fas fa-times" style="margin-right:10px;"></i>' . htmlspecialchars($error) . '</div>';
+            }
+            ?>
+
             <form action="/php/registerUser.php" method="POST" enctype="multipart/form-data">
 
                 <div class="image-upload-container">

@@ -117,18 +117,20 @@ if (!$login) {
                         </thead>
                         <tbody>
                             <?php while ($reg_row = mysqli_fetch_array($users_run)) { ?>
-                                <tr>
-                                    <td><?php echo $reg_row['id']; ?></td>
-                                    <td> <?php
-                                            echo '<img src=' . $reg_row['user_img'] . ' class="avatar user_avatar" alt=' . $reg_row['fname'] . '_image_profile' . '/>';
-                                            ?></td>
-                                    <td><?php echo $reg_row['fname'] . ' ' . $reg_row['lname']; ?></td>
-                                    <td><?php echo $reg_row['email']; ?></td>
-                                    <!-- <td>
+                                <?php if ($reg_row['email'] != $_SESSION['useremail']) { ?>
+                                    <tr>
+                                        <td><?php echo $reg_row['id']; ?></td>
+                                        <td> <?php
+                                                echo '<img src=' . $reg_row['user_img'] . ' class="avatar user_avatar" alt=' . $reg_row['fname'] . '_image_profile' . '/>';
+                                                ?></td>
+                                        <td><?php echo $reg_row['fname'] . ' ' . $reg_row['lname']; ?></td>
+                                        <td><?php echo $reg_row['email']; ?></td>
+                                        <!-- <td>
                                         <?php echo '<a href="./php/editUser.php?id=' . $reg_row['id'] . '"> <i class="far fa-edit edit-icon"></i></a>'   ?>
                                         <?php echo '<a href="./php/deleteUser.php?id=' . $reg_row['id'] . '"> <i class="far fa-trash-alt delete-icon"></i></a>'   ?>
                                     </td> -->
-                                </tr>
+                                    </tr>
+                                <?php } ?>
                             <?php } ?>
                         </tbody>
                     </table>
