@@ -7,14 +7,14 @@
                     <div class="footer-logo">
                         <a href="./index.php" class="nav-logo">kapda.</a>
                     </div>
-                    <div class="footer-links">
+                    <!-- <div class="footer-links">
                         <ul>
-                            <li><a href="" class="nav-text">Products</a></li>
+                            <li><a href="../dashboard.php" class="nav-text">Products</a></li>
                             <li><a href="" class="nav-text">Pricing plans</a></li>
                             <li><a href="" class="nav-text">FAQ</a></li>
                             <li><a href="" class="nav-text">Blog</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="footer-social-links">
                         <ul>
                             <li>

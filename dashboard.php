@@ -177,7 +177,7 @@ if (!$login) {
                                     <td><?php echo $reg_row['price']; ?></td>
                                     <td><?php echo $reg_row['description']; ?></td>
                                     <td>
-                                        <?php echo '<a href="./php/editProduct.php?id=' . $reg_row['id'] . '"> <i class="far fa-edit edit-icon"></i></a>'   ?>
+                                        <?php echo '<a href="./updateProduct.php?id=' . $reg_row['id'] . '"> <i class="far fa-edit edit-icon"></i></a>'   ?>
                                         <?php echo '<a href="./php/deleteProduct.php?id=' . $reg_row['id'] . '"> <i class="far fa-trash-alt delete-icon"></i></a>'   ?>
                                     </td>
                                 </tr>

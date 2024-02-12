@@ -50,6 +50,10 @@ li {
   width: fit-content !important;
 }
 
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
 /* nav bar styling */
 /* navbar regular css start */
 
@@ -196,6 +200,7 @@ main {
   display: flex;
   overflow: hidden;
   align-items: center;
+  padding: 10px;
   border-radius: 6px;
   margin-bottom: 10px;
   justify-content: center;

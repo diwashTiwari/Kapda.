@@ -86,7 +86,6 @@ mysqli_close($conn);
                     </a>
                 </div>
             </section>
-
         </div>
     </header>
     <main id="main">
@@ -120,7 +119,6 @@ mysqli_close($conn);
                 <?php
                 }
                 ?>
-
             </div>
         </div>
     </main>
