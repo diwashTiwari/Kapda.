@@ -101,6 +101,9 @@ if (!$id || mysqli_num_rows($product_run) === 0) {
             ?>
         </div>
     </div>
+
+    <script type="text/javascript" defer src="./js/uploadImage.js"></script>
+
 </body>
 
 </html>

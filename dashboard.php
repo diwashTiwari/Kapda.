@@ -154,7 +154,7 @@ if (!$login) {
 
             if (mysqli_num_rows($product_run) > 0) {
             ?>
-                <div class="table-wrapper">
+                <div class="table-wrapper" style="max-height: 500px;overflow: scroll;">
                     <table>
                         <thead>
                             <tr>

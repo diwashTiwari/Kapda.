@@ -12,6 +12,15 @@ if (isset($_POST['edit_product_btn'])) {
         $description = $_POST['description'];
 
         if (!empty($_FILES["uploadProductImage"]["name"])) {
+            $fetch_image = "SELECT product_img FROM products WHERE id = '$id'";
+            $result = mysqli_query($conn, $fetch_image);
+            $data = mysqli_fetch_assoc($result);
+            $image_path = $data['product_img'];
+
+            if (file_exists($image_path)) {
+                unlink($image_path);
+            }
+
             $filename = $_FILES['uploadProductImage']['name'];
             $tempname = $_FILES['uploadProductImage']['tmp_name'];
             $folder = "../images/product/" . $filename;

@@ -60,14 +60,21 @@ button:hover {
 }
 
 .table-wrapper {
-  overflow-x: auto;
+  overflow-y: auto;
   border-radius: 8px;
+  overflow-x: hidden !important;
+  max-height: 500px !important;
   border: 1px solid #181717;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+}
+
+thead > tr {
+  position: sticky;
+  top: 0;
 }
 
 th,
