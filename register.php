@@ -80,8 +80,8 @@ if ($login) {
         </div>
     </div>
 
-    <script type="text/javascript" defer src="./js/uploadImage.js"></script>
     <script type="text/javascript" defer src="./js/showPassword.js"></script>
+    <script type="text/javascript" defer src="./js/uploadImage.js"></script>
 </body>
 
 </html>

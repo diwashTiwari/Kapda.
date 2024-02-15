@@ -28,7 +28,8 @@ if (isset($_POST['edit_product_btn'])) {
             if (move_uploaded_file($tempname, $folder)) {
                 $query = "UPDATE products SET product_img = '$folder', title = '$title', price = '$price', description = '" . mysqli_real_escape_string($conn, $description) . "' WHERE id = '$id'";
             } else {
-                echo "Failed to upload the file.";
+                $error = "Failed to upload the file.";
+                header('Location: ../register.php?error=' . urlencode($error));
             }
         } else {
             $query = "UPDATE products SET title = '$title', price = '$price', description = '" . mysqli_real_escape_string($conn, $description) . "' WHERE id = '$id'";
