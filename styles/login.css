@@ -164,7 +164,7 @@ input:focus {
 }
 
 .floating-label > input:not(:placeholder-shown) + label {
-  transform: translateY(-10px);
+  transform: translateY(-16px);
   opacity: 0.7;
 }
 

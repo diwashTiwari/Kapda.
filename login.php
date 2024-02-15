@@ -40,7 +40,7 @@ if ($login) {
         <h4>We are <span>kapda.</span></h4>
         <p>Welcome back! Log in to your account to get the offer:</p>
         <div class="floating-label">
-          <input placeholder="Email" type="email" name="email" value="tdiwash12@gmail.com" id="email" autocomplete="off">
+          <input placeholder="Email" type="email" name="email" id="email" autocomplete="off">
           <label for="email">Email:</label>
           <div class="icon">
             <svg enable-background="new 0 0 100 100" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
@@ -56,9 +56,14 @@ if ($login) {
             </svg>
           </div>
         </div>
-        <div class="floating-label">
-          <input placeholder="Password" type="password" value="password1234" name="password" id="password" autocomplete="off">
+        <div class="floating-label password-controller">
+          <input placeholder="Password" type="password" name="password" id="password" autocomplete="off">
           <label for="password">Password:</label>
+          <div class="password-icons">
+            <i class="fas fa-eye eye-open" style="display: none;"></i>
+            <i class="fas fa-eye-slash eye-close"></i>
+          </div>
+
           <div class="icon">
             <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
               <style type="text/css">
@@ -89,6 +94,8 @@ if ($login) {
       </form>
     </div>
   </div>
+
+  <script type="text/javascript" defer src="./js/showPassword.js"></script>
 </body>
 
 </html>

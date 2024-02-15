@@ -45,23 +45,27 @@ if ($login) {
                 </div>
 
                 <div class="floating-label">
-                    <input type="text" id="firstname" value="Diwash" name="firstname" required>
+                    <input type="text" id="firstname" name="firstname" required>
                     <label for="firstname">First Name:</label>
                 </div>
 
                 <div class="floating-label">
-                    <input type="text" id="lastname" value="Tiwari" name="lastname" required>
+                    <input type="text" id="lastname" name="lastname" required>
                     <label for="lastname">Last Name:</label>
                 </div>
 
                 <div class="floating-label">
-                    <input type="email" id="email" value="tdiwash12@gmail.com" name="email" required>
+                    <input type="email" id="email" name="email" required>
                     <label for="email">Email:</label>
                 </div>
 
-                <div class="floating-label">
-                    <input type="password" id="password" value="password1234" name="password" required>
+                <div class="floating-label password-controller">
+                    <input type="password" id="password" name="password" required>
                     <label for="password">Password:</label>
+                    <div class="password-icons">
+                        <i class="fas fa-eye eye-open" style="display: none;"></i>
+                        <i class="fas fa-eye-slash eye-close"></i>
+                    </div>
                 </div>
 
                 <input type="submit" name="register_btn" value="Register" class="submit_btn btn" />
@@ -77,6 +81,7 @@ if ($login) {
     </div>
 
     <script type="text/javascript" defer src="./js/uploadImage.js"></script>
+    <script type="text/javascript" defer src="./js/showPassword.js"></script>
 </body>
 
 </html>

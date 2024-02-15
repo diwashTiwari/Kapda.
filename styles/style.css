@@ -321,6 +321,18 @@ main {
   cursor: pointer;
 }
 
+/* =========== Password Icons ========= */
+.password-icons {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.password-icons > i {
+  cursor: pointer;
+}
+
 /* =========== Footer ========= */
 
 .footer {
